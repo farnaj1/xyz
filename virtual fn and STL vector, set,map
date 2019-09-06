@@ -1,0 +1,132 @@
+#include <iostream>
+#include <string.h>
+#include <vector>
+#include <algorithm>
+#include <set>
+#include <map>
+
+using namespace std;
+
+// class parent{
+//     int x,y;
+//     public:
+//     parent(const parent &p2)
+//     {
+//         x = p2.x; y = p2.y;
+//         cout<<x<<" "<<y;
+//     }
+//     parent()
+//     {
+//         cout<<"in parent \n";
+//         x=10;
+//         y=20;
+//     }
+//     virtual int add(int a,int b)
+//     {
+//         return a+b;
+//     }
+// };
+
+// class child: public parent
+// {
+//     public:
+//     child()
+//     {
+//         cout<<"in child \n";
+//     }
+//     int add(int a,int b)
+//     {
+//         return a*b;
+//     }
+// };
+
+bool f(int x,int y)
+{
+    return x>y;
+}
+
+int main(void){
+    // Your code here!
+    
+    //virtual function
+    
+    //parent *d = new child;
+    //child *d=new child;
+    // int x= d->add(2,3);
+    // cout<<x;
+    // parent *d = new parent;
+    // child a;
+    // parent p1;
+    // parent p2(p1);
+    // char a[10] ={'a','b'};
+    // string b ="djsdf";
+    // cout<<a;
+    
+    
+    
+    //vector
+    
+    //vector<int> a = {1,2,3,4,1} ;
+    //cout<<a[1];
+    
+    //sort(a.begin(),a.end());
+    //cout<<a[1];
+    
+  // bool present = binary_search(a.begin(),a.end(),5);
+   //cout<<present;
+    // a.push_back(100);
+    // a.push_back(10);
+    
+    // vector<int>::iterator it = lower_bound(a.begin(), a.end(),99);
+    //cout<<*it;
+    //cout<<a[6];
+    //sort(a.begin(),a.end(),f);
+    
+    ////vector<int>::iterator it2;
+    
+    // for(it2=a.begin();it2 != a.end(); it2++)
+    // {
+    //     cout<<*it2<<" ";
+    // }
+    
+    // for(int x:a)
+    // {
+    //     cout<< x <<" ";
+    // }
+    
+    
+    //set
+    
+    // set<int> b = {1,4,6,2,1};
+    
+    // for(int x:b)
+    // {
+    //     cout<<x <<" ";
+    // }
+    
+    // cout<< "\n";
+    
+    // auto it = b.find(7);
+    // b.erase(1);
+    
+    // auto it2 = b.lower_bound(-1);
+    // cout<<*it<<" "<< *it2;
+    // cout<<"\n";
+    // cout<<*b.end();
+    
+    
+    //map
+    
+    map<char,int> c;
+    
+    string s= "abcagd";
+     for(char ch:s)
+     {
+         c[ch]++;
+     }
+     
+     cout<<c['a']<<" "<<c['b'];
+    
+    return 0;
+    
+}
